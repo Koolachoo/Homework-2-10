@@ -39,7 +39,8 @@ function writePassword() {
   else {
     charSpec = ""}
 
-  var password = generatePassword();
+  var password = generatePassword(charLow, charUp, charNum, charSpec);
+  
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -58,9 +59,9 @@ generateBtn.addEventListener("click", writePassword);
 
 
 // loop that contains the string for all of the characters
-function generatePassword() {
+function generatePassword(charLow, charUp, charNum, charSpec, answer) {
   var length = answer,
-    charset = "charSpec" + "charNum" + "charUp" + "charLow",
+    charset = charSpec + charNum + charUp + charLow,
     retVal = "";
 
   for (i = 0, n = charset.length; i < length; ++i) {
