@@ -1,5 +1,7 @@
 ## URL
 
+https://koolachoo.github.io/Homework-2-10/.
+
 ## Purpose
 
 This password generator uses user input to create criteria to base  the generation of the password on.
